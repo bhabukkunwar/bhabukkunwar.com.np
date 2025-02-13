@@ -1,0 +1,123 @@
+baseurl = "https://bhabukkunwar.com.np/"
+title = "Bhabuk Kunwar"
+
+theme = "hugo-coder"
+
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "dracula"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+#disqusShortname = "yourdiscussshortname"
+
+lastmod = [":fileModTime", ":default"]
+
+enableEmoji = true
+
+[params]
+    author = "Bhabuk Kunwar"
+    description = "Ramblings of a tech guy"
+    keywords = "blog,developer,devops,cloud"
+    info = "Software / DevOps / Cloud Engineer"
+    avatarurl = "images/me.jpeg"
+    footercontent = ""
+    toc = true
+    images = []
+
+    dateformat = "2 January 2006"
+
+    hideFooter = false
+    hideCredits = false
+    hideCopyright = false
+
+    # Git Commit in Footer, uncomment the line below to enable it.
+    # commit = "https://github.com/luizdepra/hugo-coder/tree/"
+
+    rtl = false
+
+    # Specify light/dark colorscheme
+    # Supported values:
+    # "auto" (use preference set by browser)
+    # "dark" (dark background, light foreground)
+    # "light" (light background, dark foreground) (default)
+    colorscheme = "dark"
+    
+    # Series see also post count
+    maxSeeAlsoItems = 5
+
+    # Custom CSS
+    custom_css = ["css/custom.css"]
+
+    # Custom JS
+    custom_js = []
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github"
+    weight = 1
+    url = "https://github.com/bhabukkunwar/"
+# [[params.social]]
+#     name = "Gitlab"
+#     icon = "fab fa-gitlab"
+#     weight = 2
+#     url = "https://gitlab.com/johndoe/"
+# [[params.social]]
+#    name = "Twitter"
+#    icon = "fab fa-twitter"
+#    weight = 3
+#    url = "https://twitter.com/jdheyburn/"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin"
+    weight = 5
+    url = "https://www.linkedin.com/in/bhabukkunwar/"
+# [[params.social]]
+#     name = "Medium"
+#     icon = "fab fa-medium"
+#     weight = 5
+#     url = "https://medium.com/@johndoe"
+
+[privacy]
+    [privacy.googleAnalytics]
+        anonymizeIP = true
+        respectDoNotTrack = true
+
+
+[languages]
+    [languages.en]
+        languagename = "English"
+
+        [[languages.en.menu.main]]
+        name = "About"
+        weight = 1
+        url = "/about/"
+
+        [[languages.en.menu.main]]
+        name = "Blog"
+        weight = 2
+        url = "/blog/"
+
+        [[languages.en.menu.main]]
+        name = "Projects"
+        weight = 3
+        url = "/projects/"
+
+        [[languages.en.menu.main]]
+        name = "Contact"
+        weight = 5
+        url = "/contact/"
+
+# Copied from https://gohugo.io/getting-started/configuration/#configure-minify
+[minify]
+  disableXML = true
+  minifyOutput = true
