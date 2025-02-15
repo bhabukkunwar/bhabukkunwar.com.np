@@ -27,7 +27,7 @@ jobs:
 
       - name: Build
         run: |
-          hugo --gc --minify
+          hugo --gc
           echo "Build completed"
           ls -la
           ls -la public || echo "Public directory not found!"
