@@ -31,3 +31,4 @@ jobs:
           external_repository: bhabukkunwar/bhabukkunwar.github.io
           publish_branch: main
           publish_dir: ./public
+          commit_message: ${{ github.event.head_commit.message }}
