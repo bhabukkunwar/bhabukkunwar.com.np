@@ -26,7 +26,11 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --gc
+        run: |
+          hugo --gc --minify
+          echo "Build completed"
+          ls -la
+          ls -la public || echo "Public directory not found!"
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
